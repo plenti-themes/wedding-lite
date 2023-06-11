@@ -1,0 +1,217 @@
+{
+	"components": [
+		{
+			"name": "intro",
+			"fields": {
+				"title": "We're Getting Married",
+				"subtitle": "Hi there, you're invited",
+				"checklist": [
+					"Bring your partner",
+					"Get ready to have some fun!"
+				],
+				"link": {
+					"text": "See details",
+					"url": "#section_2"
+				},
+				"save_the_date": "October 14th, 2023"
+			}
+		},
+		{
+			"name": "profiles",
+			"fields": {
+				"title": "Love Story",
+				"items": [
+					{
+						"name": "Jolie",
+						"title": "The Bride",
+						"desc": "Jolie is amazing. When I first met her I knew she was amazing and every passing day reminds me of just how amazing she is!",
+						"picture": {
+							"src": "",
+							"alt": "Profile pic of Jolie"
+						},
+						"social": [
+							{
+								"name": "instagram",
+								"link": ""
+							},
+							{
+								"name": "signal",
+								"link": ""
+							},
+							{
+								"name": "venmo",
+								"link": ""
+							}
+						]
+					},
+					{
+						"name": "Brad",
+						"title": "The Groom",
+						"desc": "Brad has an incredibly unique blend of talents. He's a talented artist, always excited about a genuinely loving person.",
+						"picture": {
+							"src": "",
+							"alt": "Profile pic of Brad"
+						},
+						"social": [
+							{
+								"name": "instagram",
+								"link": ""
+							},
+							{
+								"name": "signal",
+								"link": ""
+							},
+							{
+								"name": "venmo",
+								"link": ""
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "grid",
+			"fields": {
+				"title": "The Wedding",
+				"items": [
+					{
+						"title": "The Reception",
+						"location": "5th Avenue at, Central Park S",
+						"start_time": "5:00 PM",
+						"end_time": ""
+					},
+					{
+						"title": "Wedding Ceremony",
+						"location": "5th Avenue at, Central Park S",
+						"start_time": "6:30 PM",
+						"end_time": "9:30 PM"
+					},
+					{
+						"title": "Accommodations",
+						"location": "A+ Hotel, 5th Avenue at, Central Park S",
+						"start_time": "",
+						"end_time": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "switcher",
+			"fields": {
+				"title": "Groomsmen & Bridesmaids",
+				"tabs": [
+					{
+						"title": "Groom's Side",
+						"items": [
+							{
+								"name": "Kevin",
+								"title": "Cousin",
+								"desc": "Kevin is a good cousin, always quick with a joke or light of your smoke.",
+								"image": {
+									"src": "",
+									"alt": "Profile pic of Kevin"
+								}
+							},
+							{
+								"name": "Wilson",
+								"title": "Best Friend",
+								"desc": "Wilson may look shy, but wait until you see him on the dance floor!",
+								"image": {
+									"src": "",
+									"alt": "Profile pic of Wilson"
+								}
+							}
+						]
+					},
+					{
+						"title": "Bride's Side",
+						"items": [
+							{
+								"name": "Jennie",
+								"title": "Sister",
+								"desc": "Jennie has always been Jolie's favorite (only) sister. This whole thing couldn't happen without her.",
+								"image": {
+									"src": "",
+									"alt": "Profile pic of Jennie"
+								}
+							},
+							{
+								"name": "Madam",
+								"title": "Friend",
+								"desc": "Jolie met Madam in college and the two have been inseparable ever since.",
+								"image": {
+									"src": "",
+									"alt": "Profile pic of Madam"
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "gallery",
+			"fields": {
+				"title": "Gallery",
+				"photos": [
+					"",
+					"",
+					""
+				]
+			}
+		},
+		{
+			"name": "form",
+			"fields": {
+				"title": "RSVP",
+				"desc": "Will you attend? Please reserve before March 2th, 2022",
+				"button": "Confirm Attendance"
+			}
+		},
+		{
+			"name": "contact",
+			"fields": {
+				"title": "Get in Touch",
+				"items": [
+					{
+						"title": "Visit Us",
+						"desc": "5th Avenue at, Central Park S,<br>New York, NY 10019, United States"
+					},
+					{
+						"title": "Contact Information",
+						"desc": "<a href='mailto:hello@company.com'>hello@company.com</a><br><a href='tel:090-080-0760'>090-080-0760</a>"
+					},
+					{
+						"title": "Socials",
+						"icons": [
+							{
+								"icon": "twitter",
+								"link": "@plentico"
+							},
+							{
+								"icon": "instagram",
+								"link": "#"
+							},
+							{
+								"icon": "whatsapp",
+								"link": "#"
+							},
+							{
+								"icon": "facebook",
+								"link": "#"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "footer",
+			"fields": {
+				"bride": "Jolie",
+				"groom": "Bratt"
+			}
+		}
+	]
+}
