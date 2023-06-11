@@ -1,11 +1,12 @@
 <script>
-	export let title;
+	export let components, content, allContent, allLayouts;
 </script>
 
-<h1>{title}</h1>
-
-<style>
-	h1 {
-		font-family: Helvetica, sans-serif;
-	}
-</style>
+{#each components as {name, fields}}  
+  <svelte:component
+  	this={allLayouts["layouts_components_" + name + "_svelte"]}
+	{...fields}
+	{content}
+	{allContent}
+	{allLayouts} />
+{/each}
