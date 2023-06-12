@@ -134,6 +134,10 @@ p {
   font-weight: var(--font-weight-light);
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn {
     display: inline-block;
     font-weight: 400;

@@ -80,7 +80,6 @@
         overflow: hidden;
         padding: 12px 24px;
         margin-top: 1.5rem;
-        text-decoration: none;
         display: inline-block;
     }
     .save-the-date-wrapper {

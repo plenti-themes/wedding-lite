@@ -1,19 +1,7 @@
 <div id="sticky-wrapper" class="sticky-wrapper" style="height: 98px;">
     <nav class="navbar navbar-expand-lg" style="width: 1520px;">
         <div class="container">
-            <button
-                class="navbar-toggler collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon" />
-            </button>
-
-            <a href="index.html" class="navbar-brand mx-auto mx-lg-0">
+            <a href="/" class="navbar-brand mx-auto mx-lg-0">
                 <span>Bratt</span>
                 <i class="bi-heart brand-icon" />
                 <span>Jolie</span>
@@ -21,15 +9,6 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a
-                            class="nav-link click-scroll active"
-                            href="#section_1"
-                        >
-                            Homepage
-                        </a>
-                    </li>
-
                     <li class="nav-item">
                         <a
                             class="nav-link click-scroll inactive"
@@ -93,16 +72,18 @@
         min-height: 98px;
     }
     .navbar {
-        position: absolute;
-        z-index: 9;
+        position: fixed;
+        top: 0px;
         right: 0;
         left: 0;
+        z-index: 9;
         padding-top: 20px;
         padding-bottom: 20px;
         flex-wrap: nowrap;
         justify-content: flex-start;
         display: flex;
         align-items: center;
+        background: var(--white-color);
     }
     .container {
         display: flex;
@@ -115,6 +96,11 @@
     }
     .navbar-brand, .navbar-brand:hover {
         color: var(--primary-color);
+    }
+    .navbar-brand {
+        font-family: var(--title-font-family);
+        font-size: var(--h4-font-size);
+        font-weight: var(--font-weight-bold);
     }
     .navbar-collapse {
         display: flex;
@@ -148,6 +134,5 @@
         text-transform: uppercase;
         padding-top: 15px;
         padding-bottom: 15px;
-        text-decoration: none;
     }
 </style>
