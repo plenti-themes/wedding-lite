@@ -23,7 +23,7 @@
             </a>
         </div>
 
-        <div class="col-lg-3 col-12 save-the-date-wrap mt-auto ms-lg-auto">
+        <div class="save-the-date-wrapper">
             <div class="save-the-date-thumb">
                 <h4 class="save-the-date-title">Save the date</h4>
 
@@ -64,5 +64,49 @@
     }
     h2 {
         color: var(--custom-btn-bg-color);
+    }
+    i {
+        color: var(--icon-color);
+    }
+    .custom-btn {
+        background: var(--custom-btn-bg-color);
+        border: 0;
+        color: var(--white-color);
+        font-family: var(--title-font-family);
+        font-size: var(--p-font-size);
+        font-weight: var(--font-weight-bold);
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+        padding: 12px 24px;
+        margin-top: 1.5rem;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .save-the-date-wrapper {
+        margin-top: auto;
+        margin-left: auto;
+        flex: 0 0 auto;
+        width: 25%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+    .save-the-date-thumb {
+        background: var(--white-color);
+        border-radius: var(--border-radius-small);
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        text-align: left;
+    }
+    .save-the-date-title {
+        background: var(--primary-color);
+        color: var(--white-color);
+        margin-bottom: 0;
+        padding: 10px 20px;
+    }
+    .save-the-date-body {
+        padding: 15px 20px;
     }
 </style>
