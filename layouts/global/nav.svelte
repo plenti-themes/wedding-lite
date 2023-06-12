@@ -87,3 +87,67 @@
         </div>
     </nav>
 </div>
+
+<style>
+    .sticky-wrapper {
+        min-height: 98px;
+    }
+    .navbar {
+        position: absolute;
+        z-index: 9;
+        right: 0;
+        left: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        display: flex;
+        align-items: center;
+    }
+    .container {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1320px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .navbar-brand, .navbar-brand:hover {
+        color: var(--primary-color);
+    }
+    .navbar-collapse {
+        display: flex;
+        flex-basis: auto;
+        flex-grow: 1;
+        align-items: center;
+    }
+    ul {
+        flex-direction: row;
+        margin-left: auto;
+        display: flex;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        margin-top: 0;
+    }
+    li {
+        color: var(--p-color);
+        font-size: var(--p-font-size);
+        font-weight: var(--font-weight-light);
+    }
+    a.nav-link {
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 20px;
+        margin-left: 20p;
+        display: inline-block;
+        color: var(--p-color);
+        font-size: var(--menu-font-size);
+        font-weight: var(--font-weight-normal);
+        text-transform: uppercase;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-decoration: none;
+    }
+</style>
