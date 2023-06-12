@@ -90,9 +90,7 @@
         flex-wrap: inherit;
         align-items: center;
         justify-content: space-between;
-        max-width: 1320px;
         width: 100%;
-        margin: 0 auto;
     }
     .navbar-brand, .navbar-brand:hover {
         color: var(--primary-color);

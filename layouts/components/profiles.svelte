@@ -1,81 +1,104 @@
+<script>
+    export let items;
+</script>
+
 <section class="about-section section-padding" id="section_2">
     <div class="container">
         <div class="row">
 
-            <div class="col-lg-12 col-12">
-                <div class="section-title-wrap mb-5">
-                    <h2 class="section-title">Love Story</h2>
+            <div class="section-title-wrap">
+                <h2 class="section-title">Love Story</h2>
 
-                    <div class="section-title-bottom">
-                        <span class="section-title-line"></span>
-                        <i class="section-title-icon bi-heart-fill"></i>
-                        <span class="section-title-line"></span>
-                    </div>
+                <div class="section-title-bottom">
+                    <span class="section-title-line"></span>
+                    <i class="section-title-icon bi-heart-fill"></i>
+                    <span class="section-title-line"></span>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-12">
-                <div class="image-hover-thumb">
-                    <img src="images/vertical-shot-beautiful-smiling-girl.jpg" class="about-image img-fluid" alt="">
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-12">
-                <div class="about-info-wrap d-flex flex-column">
-                    <div class="about-info-title d-flex align-items-center my-3">
-                        <h4>Jolie</h4>
-
-                        <span class="about-tag ms-2">The Bride</span>
-                    </div>
-
-                    <p>Sarah is amazing. When I first met her I knew she was amazing and every passing day reminds me of just how amazing she is!</p>
-
-                    <div class="social-icon-wrap mt-auto">
-                        <ul class="social-icon ms-auto">
-                            <li class="social-icon-item"><a href="#" class="social-icon-link bi-facebook"></a></li>
-
-                            <li class="social-icon-item"><a href="#" class="social-icon-link bi-twitter"></a></li>
-
-                            <li class="social-icon-item"><a href="#" class="social-icon-link bi-instagram"></a></li>
-
-                            <li class="social-icon-item"><a href="#" class="social-icon-link bi-whatsapp"></a></li>
-                        </ul>
+            {#each items as item}
+                <div class="image-wrapper">
+                    <div class="image-hover-thumb">
+                        <img 
+                            src="{item.picture.src}"
+                            class="about-image img-fluid"
+                            alt="{item.picture.alt}"
+                        />
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-3 col-12">
-                <div class="image-hover-thumb">
-                    <img src="images/vertical-shot-young-handsome-guy-autumn-park.jpg" class="about-image img-fluid" alt="">
-                </div>
-            </div>
+                <div class="info-wrapper">
+                    <div class="about-info-wrap">
+                        <div class="about-info-title">
+                            <h4>{item.name}</h4>
 
-            <div class="col-lg-3 col-12">
-                <div class="about-info-wrap d-flex flex-column">
-                    <div class="about-info-title d-flex align-items-center my-3">
-                        <h4>Bratt</h4>
+                            <span class="about-tag ms-2">{item.title}</span>
+                        </div>
 
-                        <span class="about-tag ms-2">The Groom</span>
-                    </div>
+                        <p>{item.desc}</p>
 
-                    <p>I really love her incredibly unique blend of talents.</p>
-
-                    <p>She's a talented artist, always excited about a genuinely loving person.</p>
-
-                    <div class="social-icon-wrap mt-auto">
-                        <ul class="social-icon ms-auto">
-                            <li class="social-icon-item"><a href="#" class="social-icon-link bi-facebook"></a></li>
-
-                            <li class="social-icon-item"><a href="#" class="social-icon-link bi-twitter"></a></li>
-
-                            <li class="social-icon-item"><a href="#" class="social-icon-link bi-instagram"></a></li>
-
-                            <li class="social-icon-item"><a href="#" class="social-icon-link bi-whatsapp"></a></li>
-                        </ul>
+                        <div class="social-icon-wrap mt-auto">
+                            <ul class="social-icon ms-auto">
+                                {#each item.social as social}
+                                    <li class="social-icon-item">
+                                        <a href="{social.link}" class="social-icon-link bi-{social.name}"></a>
+                                    </li>
+                                {/each}
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
+            {/each}
 
         </div>
     </div>
 </section>
+
+<style>
+    .image-wrapper, .info-wrapper {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+    .image-hover-thumb {
+        border-radius: var(--border-radius-medium);
+        position: relative;
+        overflow: hidden;
+    }
+    img {
+        border-radius: var(--border-radius-small);
+        display: block;
+        transition: all 0.5s;
+        max-width: 100%;
+        height: auto;
+    }
+    .section-title-wrap {
+        margin-bottom: 3rem;
+    }
+    .about-info-title {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .about-tag {
+        font-weight: var(--font-weight-light);
+        text-transform: uppercase;
+    }
+    .social-icon-item {
+        list-style: none;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .social-icon-link {
+        background: var(--secondary-color);
+        border-radius: var(--border-radius-large);
+        font-size: var(--menu-font-size);
+        color: var(--dark-color);
+        display: inline-block;
+        vertical-align: top;
+        margin: 4px;
+        width: 30px;
+        line-height: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+</style>

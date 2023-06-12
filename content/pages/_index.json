@@ -27,7 +27,7 @@
 						"title": "The Bride",
 						"desc": "Jolie is amazing. When I first met her I knew she was amazing and every passing day reminds me of just how amazing she is!",
 						"picture": {
-							"src": "",
+							"src": "/media/profiles/jolie.jpg",
 							"alt": "Profile pic of Jolie"
 						},
 						"social": [
@@ -50,7 +50,7 @@
 						"title": "The Groom",
 						"desc": "Brad has an incredibly unique blend of talents. He's a talented artist, always excited about a genuinely loving person.",
 						"picture": {
-							"src": "",
+							"src": "/media/profiles/bratt.jpg",
 							"alt": "Profile pic of Brad"
 						},
 						"social": [
