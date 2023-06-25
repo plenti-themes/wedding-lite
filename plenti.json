@@ -2,6 +2,7 @@
 	"routes": {
 		"pages": "/:filename"
 	},
+	"baseurl": "/wedding-lite/",
 	"build": "public",
 	"local": {
 		"port": 3000

@@ -13,7 +13,7 @@
 					"text": "See details",
 					"url": "#section_2"
 				},
-				"image": "/media/hero/couple-hugging-laughing-near-wall.png",
+				"image": "media/hero/couple-hugging-laughing-near-wall.png",
 				"save_the_date": "October 14th, 2023"
 			}
 		},
@@ -27,7 +27,7 @@
 						"title": "The Bride",
 						"desc": "Jolie is amazing. When I first met her I knew she was amazing and every passing day reminds me of just how amazing she is!",
 						"picture": {
-							"src": "/media/profiles/jolie.jpg",
+							"src": "media/profiles/jolie.jpg",
 							"alt": "Profile pic of Jolie"
 						},
 						"social": [
@@ -50,7 +50,7 @@
 						"title": "The Groom",
 						"desc": "Brad has an incredibly unique blend of talents. He's a talented artist, always excited about a genuinely loving person.",
 						"picture": {
-							"src": "/media/profiles/bratt.jpg",
+							"src": "media/profiles/bratt.jpg",
 							"alt": "Profile pic of Brad"
 						},
 						"social": [
@@ -79,18 +79,30 @@
 					{
 						"title": "The Reception",
 						"location": "5th Avenue at, Central Park S",
+						"image": {
+							"src": "media/grid/decorated-table-setting-wedding-celebration.jpg",
+							"alt": "Decorated table setting at wedding celebration"
+						},
 						"start_time": "5:00 PM",
 						"end_time": ""
 					},
 					{
 						"title": "Wedding Ceremony",
 						"location": "5th Avenue at, Central Park S",
+						"image": {
+							"src": "media/grid/front-view-wedding-couple.jpg",
+							"alt": "Front view of wedding couple"
+						},
 						"start_time": "6:30 PM",
 						"end_time": "9:30 PM"
 					},
 					{
 						"title": "Accommodations",
 						"location": "A+ Hotel, 5th Avenue at, Central Park S",
+						"map": {
+							"title": "Venue Location",
+							"src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8046.475092226252!2d-73.9752829999323!3d40.766655075110314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f07d5da561%3A0x61f6aa300ba8339d!2sThe%20Plaza!5e1!3m2!1sen!2ssg!4v1662129560604!5m2!1sen!2ssg"
+						},
 						"start_time": "",
 						"end_time": ""
 					}
