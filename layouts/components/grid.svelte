@@ -1,8 +1,8 @@
 <script>
-    export let title, items;
+    export let title, items, order;
 </script>
 
-<section class="grid-section section-padding" id="section_3">
+<section class="grid-section section-padding" id="section_{order}">
     <div class="container">
         <div class="row">
 

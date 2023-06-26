@@ -1,8 +1,8 @@
 <script>
-    export let title, subtitle, checklist, link, image, save_the_date;
+    export let title, subtitle, checklist, link, image, save_the_date, order;
 </script>
 
-<section id="hero">
+<section class="hero-section" id="section_{order}">
     <div class="hero-container" style="background-image: url({image});}">
         <div class="content">
 

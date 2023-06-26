@@ -1,10 +1,10 @@
 <script>
-    export let title, tabs;
+    export let title, tabs, order;
 
     let activeTab = tabs[0].title;
 </script>
 
-<section class="people-section section-padding" id="section_4">
+<section class="people-section section-padding" id="section_{order}">
     <div class="container">
         <div class="row">
 

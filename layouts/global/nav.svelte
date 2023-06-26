@@ -1,7 +1,7 @@
-<div id="sticky-wrapper" class="sticky-wrapper" style="height: 98px;">
-    <nav class="navbar navbar-expand-lg" style="width: 1520px;">
+<div id="sticky-wrapper" class="sticky-wrapper">
+    <nav class="navbar">
         <div class="container">
-            <a href="/" class="navbar-brand mx-auto mx-lg-0">
+            <a href="#section_0" class="navbar-brand">
                 <span>Bratt</span>
                 <i class="bi-heart brand-icon" />
                 <span>Jolie</span>
@@ -10,56 +10,25 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a
-                            class="nav-link click-scroll inactive"
-                            href="#section_2"
-                        >
-                            Our Story
-                        </a>
+                        <a href="#section_1">The Couple</a>
                     </li>
-
                     <li class="nav-item">
-                        <a
-                            class="nav-link click-scroll inactive"
-                            href="#section_3"
-                        >
-                            The Wedding
-                        </a>
+                        <a href="#section_2">Our Story</a>
                     </li>
-
                     <li class="nav-item">
-                        <a 
-                            class="nav-link click-scroll inactive"
-                            href="#section_4"
-                        >
-                            People
-                        </a>
+                        <a href="#section_3">The Wedding</a>
                     </li>
-
                     <li class="nav-item">
-                        <a 
-                            class="nav-link click-scroll inactive"
-                            href="#section_5">
-                            Gallery
-                        </a>
+                        <a href="#section_4">People</a>
                     </li>
-
                     <li class="nav-item">
-                        <a
-                            class="nav-link click-scroll inactive"
-                            href="#section_6"
-                        >
-                            Rsvp
-                        </a>
+                        <a href="#section_5">Gallery</a>
                     </li>
-
                     <li class="nav-item">
-                        <a
-                            class="nav-link click-scroll inactive"
-                            href="#section_7"
-                        >
-                            Contact Us
-                        </a>
+                        <a href="#section_6">Rsvp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#section_7">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -84,6 +53,7 @@
         display: flex;
         align-items: center;
         background: var(--white-color);
+        height: 90px;
     }
     .container {
         display: flex;
@@ -120,7 +90,7 @@
         font-size: var(--p-font-size);
         font-weight: var(--font-weight-light);
     }
-    a.nav-link {
+    a {
         padding-right: 0;
         padding-left: 0;
         margin-right: 20px;

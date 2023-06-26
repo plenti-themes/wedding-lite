@@ -1,10 +1,10 @@
 <script>
-    export let title, desc, image, button;
+    export let title, desc, image, button, order;
 </script>
 
 <section 
     class="form-section section-padding"
-    id="section_6"
+    id="section_{order}"
     style="background-image: url({image});"
 >
     <div class="container">

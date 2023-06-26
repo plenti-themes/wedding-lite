@@ -1,8 +1,8 @@
 <script>
-    export let title, background, desc;
+    export let title, background, desc, order;
 </script>
 
-<section class="blurb-section section-padding" id="section_2" style="background: url({background});">
+<section class="blurb-section section-padding" id="section_{order}" style="background: url({background});">
     <div class="container">
         <div class="row">
 

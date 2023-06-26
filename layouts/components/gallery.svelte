@@ -1,8 +1,8 @@
 <script>
-    export let title, photos;
+    export let title, photos, order;
 </script>
 
-<section class="gallery-section section-bg section-padding" id="section_5">
+<section class="gallery-section section-bg section-padding" id="section_{order}">
     <div class="container">
         <div class="row">
 
