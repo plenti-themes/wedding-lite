@@ -168,9 +168,42 @@
 			"fields": {
 				"title": "Gallery",
 				"photos": [
-					"",
-					"",
-					""
+					{
+						"src": "media/gallery/bearded-stylish-groom-suit-beautiful-blonde.jpg",
+						"alt": "Bearded stylish groom suit beautiful blonde"
+					},
+					{
+						"src": "media/gallery/bride-groom-having-their-wedding-with-guests-beach.jpg",
+						"alt": "Bride and groom having their wedding with guests on the beach"
+					},
+					{
+						"src": "media/gallery/couple.jpg",
+						"alt": "Couple holding hands and flowers"
+					},
+					{
+						"src": "media/gallery/elegant-young-woman-fashionable.jpg",
+						"alt": "Elegant young woman fashionable"
+					},
+					{
+						"src": "media/gallery/groom-with-bride-are-knocking-glasses-with-champagne.jpg",
+						"alt": "Groom and bride are knocking glasses of champagne"
+					},
+					{
+						"src": "media/gallery/wedding-ceremony-place-nature-outside-summer.jpg",
+						"alt": "Wedding ceremony place nature outside summer"
+					},
+					{
+						"src": "media/gallery/young-couple-broke-down-car-while-traveling.jpg",
+						"alt": "Young couple broke down car while traveling"
+					},
+					{
+						"src": "media/gallery/woman-with-bouquet.jpg",
+						"alt": "Woman holding bouquet"
+					},
+					{
+						"src": "media/gallery/young-couple-traveling-car-sunny-day.jpg",
+						"alt": "Young couple traveling car sunny day"
+					}
 				]
 			}
 		},
