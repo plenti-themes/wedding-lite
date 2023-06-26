@@ -1,0 +1,1 @@
+export let env={local:!1,baseurl:"/wedding-lite/",entrypoint:"global/html.svelte",cms:{repo:"",redirectUrl:"",appId:"",branch:""}}
