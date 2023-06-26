@@ -1,10 +1,14 @@
+<script>
+    export let title, items;
+</script>
+
 <section class="contact-section section-bg section-padding" id="section_7">
     <div class="container">
         <div class="row">
 
             <div class="col-lg-12 col-12">
                 <div class="section-title-wrap mb-5">
-                    <h2 class="section-title">Get in touch</h2>
+                    <h2 class="section-title">{title}</h2>
 
                     <div class="section-title-bottom">
                         <span class="section-title-line"></span>
@@ -14,46 +18,67 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-12">
-                <h4 class="mb-4">Visit Us</h4>
-
-                <p> 5th Avenue at, Central Park S, 
-                <br> New York, NY 10019, United States</p>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 my-4 my-lg-0 my-md-0">
-                <h4 class="mb-4">Contact Information</h4>
-
-                <p class="mb-2">
-                    <a href="mailto:hello@company.com">
-                        hello@company.com
-                    </a>
-                </p>
-
-                <p>
-                    <a href="tel: 090-080-0760">
-                        090-080-0760
-                    </a>
-                </p>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <h4 class="mb-4">Socials</h4>
-
-                <ul class="social-icon">
-                    <li class="social-icon-item"><a href="#" class="social-icon-link bi-twitter"></a></li>
-
-                    <li class="social-icon-item"><a href="#" class="social-icon-link bi-instagram"></a></li>
-
-                    <li class="social-icon-item"><a href="#" class="social-icon-link bi-whatsapp"></a></li>
-
-                    <li class="social-icon-item"><a href="https://fb.com/tooplate" target="_blank" class="social-icon-link bi-facebook"></a></li>
-                </ul>
-
-                <p class="copyright-text mt-3 mb-0">Copyright © 2036 Wedding Lite Co., Ltd. 
-                <br> Design: <a href="https://www.tooplate.com" target="_parent">Tooplate</a></p>
+            <div class="items">
+                {#each items as item}
+                    <div class="item">
+                        <h4>{item.title}</h4>
+                        {#if item?.desc}
+                            <p>{@html item.desc}</p>
+                        {/if}
+                        {#if item?.icons}
+                            <ul class="social-icon">
+                                {#each item.icons as icon}
+                                    <li class="social-icon-item">
+                                        <a href="{icon.link}" class="social-icon-link bi-{icon.name}"></a>
+                                    </li>    
+                                {/each}
+                            </ul>
+                        {/if}
+                    </div>
+                {/each}
             </div>
 
         </div>
     </div>
 </section>
+
+<style>
+    .items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+    }
+    .items :global(a) {
+        color: var(--p-color);
+        text-decoration: none;
+        touch-action: manipulation;
+        transition: all 0.3s;
+    }
+    .items :global(a:hover) {
+        color: var(--secondary-color);
+    }
+    ul {
+        padding: 0;
+    }
+    .social-icon-item {
+        list-style: none;
+        display: inline-block;
+        vertical-align: top;
+    }
+    a.social-icon-link {
+        background: var(--secondary-color);
+        border-radius: var(--border-radius-large);
+        font-size: var(--menu-font-size);
+        color: var(--dark-color);
+        display: inline-block;
+        vertical-align: top;
+        margin: 4px;
+        width: 30px;
+        line-height: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+    a.social-icon-link:hover {
+        color: var(--white-color);
+    }
+</style>

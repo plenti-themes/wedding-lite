@@ -236,19 +236,19 @@
 						"title": "Socials",
 						"icons": [
 							{
-								"icon": "twitter",
+								"name": "twitter",
 								"link": "@plentico"
 							},
 							{
-								"icon": "instagram",
+								"name": "instagram",
 								"link": "#"
 							},
 							{
-								"icon": "whatsapp",
+								"name": "whatsapp",
 								"link": "#"
 							},
 							{
-								"icon": "facebook",
+								"name": "facebook",
 								"link": "#"
 							}
 						]
