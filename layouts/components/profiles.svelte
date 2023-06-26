@@ -1,5 +1,5 @@
 <script>
-    export let items;
+    export let title, items;
 </script>
 
 <section class="profiles-section section-padding" id="section_2">
@@ -7,7 +7,7 @@
         <div class="row">
 
             <div class="section-title-wrap">
-                <h2 class="section-title">Love Story</h2>
+                <h2 class="section-title">{title}</h2>
 
                 <div class="section-title-bottom">
                     <span class="section-title-line"></span>

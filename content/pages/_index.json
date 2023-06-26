@@ -20,7 +20,7 @@
 		{
 			"name": "profiles",
 			"fields": {
-				"title": "Love Story",
+				"title": "The Couple",
 				"items": [
 					{
 						"name": "Jolie",
@@ -69,6 +69,14 @@
 						]
 					}
 				]
+			}
+		},
+		{
+			"name": "blurb",
+			"fields": {
+				"title": "Our Story",
+				"background": "media/blurb/field-benjamin-davies.jpg",
+				"desc": "<p>Our story began in a small café, where the aroma of freshly brewed coffee filled the air. Bratt, with his infectious laughter and kind-hearted nature, was engrossed in a book, completely unaware that fate had a surprise in store for him. Jolie, with her radiant smile and eyes that sparkled like the stars, entered the café and caught Bratt's attention instantaneously. It was as if time stood still, and in that moment, their hearts whispered a secret only they could hear.</p><p>As destiny would have it, Bratt and Jolie's paths continued to cross, leading them on countless serendipitous encounters. They would bump into each other at art galleries, share laughter under the moonlit sky, and dance to the rhythm of their hearts at vibrant festivals. With every passing day, their connection grew stronger, deepening the love they held for one another.</p><p>Through the highs and lows of life, Bratt and Jolie stood side by side, supporting each other's dreams and embracing every adventure that came their way. Their love blossomed like a garden in spring, nurturing their souls and bringing them joy beyond measure. Together, they discovered the true meaning of love - a love that was unconditional, unwavering, and filled with infinite possibilities.</p>"
 			}
 		},
 		{
