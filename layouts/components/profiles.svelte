@@ -2,7 +2,7 @@
     export let items;
 </script>
 
-<section class="about-section section-padding" id="section_2">
+<section class="profiles-section section-padding" id="section_2">
     <div class="container">
         <div class="row">
 
@@ -70,9 +70,6 @@
         transition: all 0.5s;
         max-width: 100%;
         height: auto;
-    }
-    .section-title-wrap {
-        margin-bottom: 3rem;
     }
     .about-info-title {
         display: flex;

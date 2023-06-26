@@ -211,7 +211,11 @@
 			"name": "form",
 			"fields": {
 				"title": "RSVP",
-				"desc": "Will you attend? Please reserve before March 2th, 2022",
+				"desc": {
+					"intro": "Will you attend?",
+					"main": "Please reserve before March 2th, 2022"
+				},
+				"image": "media/form/closeup-shot-newlywed-couple-sitting-bench.jpg",
 				"button": "Confirm Attendance"
 			}
 		},

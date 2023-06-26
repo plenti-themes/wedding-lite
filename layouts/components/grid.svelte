@@ -60,6 +60,9 @@
 </section>
 
 <style>
+    section {
+        background-color: #f9f9f9;
+    }
     .items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -69,7 +72,7 @@
         border-radius: var(--border-radius-small);
         display: block;
         overflow: hidden;
-        margin: 40px 0;
+        margin-bottom: 20px;
     }
     img, .google-map {
         transform: scale(1.05);

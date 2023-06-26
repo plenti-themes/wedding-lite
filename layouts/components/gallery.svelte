@@ -31,6 +31,9 @@
 </section>
 
 <style>
+    section {
+        background-color: #f9f9f9;
+    }
     .photos {
         display: grid;
         grid: auto / repeat(3, 1fr);

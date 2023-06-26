@@ -69,9 +69,6 @@
 </section>
 
 <style>
-    .section-header {
-        margin-bottom: 40px;
-    }
     .tabs-container {
         flex: 0 0 auto;
         width: 25%;
