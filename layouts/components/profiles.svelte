@@ -85,7 +85,7 @@
         display: inline-block;
         vertical-align: top;
     }
-    .social-icon-link {
+    a.social-icon-link {
         background: var(--secondary-color);
         border-radius: var(--border-radius-large);
         font-size: var(--menu-font-size);
@@ -97,5 +97,9 @@
         line-height: 30px;
         line-height: 30px;
         text-align: center;
+        transition: all .3s;
+    }
+    a.social-icon-link:hover {
+        color: var(--white-color);
     }
 </style>

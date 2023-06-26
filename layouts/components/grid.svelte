@@ -6,15 +6,13 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-lg-12 col-12">
-                <div class="section-title-wrap mb-5">
-                    <h2 class="section-title">{title}</h2>
+            <div class="section-title-wrap">
+                <h2 class="section-title">{title}</h2>
 
-                    <div class="section-title-bottom">
-                        <span class="section-title-line"></span>
-                        <i class="section-title-icon bi-heart-fill"></i>
-                        <span class="section-title-line"></span>
-                    </div>
+                <div class="section-title-bottom">
+                    <span class="section-title-line"></span>
+                    <i class="section-title-icon bi-heart-fill"></i>
+                    <span class="section-title-line"></span>
                 </div>
             </div>
 
@@ -31,7 +29,6 @@
                                 title="{item.map.title}"
                                 src="{item.map.src}"
                                 width="100%"
-                                height="310"
                                 allowfullscreen="" 
                                 loading="lazy">
                             </iframe>
@@ -74,7 +71,7 @@
         overflow: hidden;
         margin-bottom: 20px;
     }
-    img, .google-map {
+    img {
         transform: scale(1.05);
         transition: all 0.5s;
         max-width: 100%;
@@ -82,5 +79,10 @@
     }
     img:hover {
         transform: scale(1.1);
+    }
+    iframe.google-map {
+        height: 20vw;
+        max-height: 275px;
+        transform: scale(1.05);
     }
 </style>

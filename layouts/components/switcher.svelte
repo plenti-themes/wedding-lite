@@ -9,7 +9,7 @@
         <div class="row">
 
             <div class="section-header">
-                <div class="section-title-wrap mb-5">
+                <div class="section-title-wrap">
                     <h2 class="section-title">{title}</h2>
 
                     <div class="section-title-bottom">
@@ -94,6 +94,9 @@
         background-color: transparent;
         cursor: pointer;
     }
+    .nav-tabs .nav-link:last-of-type {
+        border-bottom: 0;
+    }
     .nav-link.active h3,
     .nav-link:hover h3 {
         color: var(--primary-color);
@@ -109,13 +112,6 @@
         width: 19px;
         height: 19px;
         text-indent: -9999px;
-        /*
-        background: transparent;
-        border-top-color: var(--secondary-color);
-        border-left-color: var(--secondary-color);
-        border-top: 2px solid transparent;
-        border-left: 2px solid transparent;
-        */
         transition: all 250ms ease-in-out;
         text-decoration: none;
         color: transparent;

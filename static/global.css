@@ -134,6 +134,10 @@ p {
   font-weight: var(--font-weight-light);
 }
 
+ul {
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
