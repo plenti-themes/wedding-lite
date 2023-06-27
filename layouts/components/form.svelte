@@ -97,4 +97,9 @@
         background: var(--secondary-color);
         border-color: transparent;
     }
+    @media (max-width: 799px) {
+        .top {
+            display: block;
+        }
+    }
 </style>
