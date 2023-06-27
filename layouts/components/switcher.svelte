@@ -158,4 +158,20 @@
         font-weight: var(--font-weight-light);
         text-transform: uppercase;
     }
+    @media (max-width: 799px) {
+        .tabs-container,
+        .tab-content-container {
+            width: 100%;
+        }
+    }
+    @media (max-width: 649px) {
+        .image-container,
+        .content-container {
+            width: 100%;
+        }
+        .tabs-container,
+        .content-container {
+            margin-bottom: 20px;
+        }
+    }
 </style>
