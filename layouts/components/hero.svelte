@@ -110,4 +110,18 @@
     .save-the-date-body {
         padding: 15px 20px;
     }
+    @media (max-width: 1099px) {
+        .hero-container {
+            height: inherit;
+        }
+    }
+    @media (max-width: 799px) {
+        .content {
+            width: 100%;
+        }
+        .save-the-date-wrapper {
+            margin: 40px 0;
+            width: initial;
+        }
+    }
 </style>
