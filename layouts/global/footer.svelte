@@ -11,6 +11,6 @@
 
 <style>
     footer {
-        padding-top: 180px;
+        padding-top: 10vw;
     }
 </style>

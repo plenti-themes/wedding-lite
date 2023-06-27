@@ -76,4 +76,10 @@
     a.social-icon-link:hover {
         color: var(--white-color);
     }
+    @media (max-width: 649px) {
+        .items {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+    }
 </style>
