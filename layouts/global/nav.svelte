@@ -1,3 +1,6 @@
+<script>
+    export let expanded = false;
+</script>
 <div id="sticky-wrapper" class="sticky-wrapper">
     <nav class="navbar">
         <div class="container">
@@ -7,31 +10,44 @@
                 <span>Jolie</span>
             </a>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-collapse{expanded ? ' expanded' : ''}" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="#section_1">The Couple</a>
+                        <a href="#section_1" on:click={() => expanded = false}>The Couple</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#section_2">Our Story</a>
+                        <a href="#section_2" on:click={() => expanded = false}>Our Story</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#section_3">The Wedding</a>
+                        <a href="#section_3" on:click={() => expanded = false}>The Wedding</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#section_4">People</a>
+                        <a href="#section_4" on:click={() => expanded = false}>People</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#section_5">Gallery</a>
+                        <a href="#section_5" on:click={() => expanded = false}>Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#section_6">Rsvp</a>
+                        <a href="#section_6" on:click={() => expanded = false}>Rsvp</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#section_7">Contact Us</a>
+                        <a href="#section_7" on:click={() => expanded = false}>Contact Us</a>
                     </li>
                 </ul>
             </div>
+
+            <button 
+                on:click={() => expanded = !expanded}
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="{expanded}"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </nav>
 </div>
@@ -101,5 +117,73 @@
         text-transform: uppercase;
         padding-top: 15px;
         padding-bottom: 15px;
+    }
+    .navbar-toggler {
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+        margin: 0;
+        width: 30px;
+        height: 35px;
+        outline: none;
+    }
+    .navbar-toggler-icon {
+        display: none;
+        background: var(--dark-color);
+        transition: background 10ms 300ms ease;
+        width: 30px;
+        height: 2px;
+        position: relative;
+    }
+    .navbar-toggler-icon:before,
+    .navbar-toggler-icon:after {
+        transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+        transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+        transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+        position: absolute;
+        right: 0;
+        left: 0;
+        background: var(--dark-color);
+        width: 30px;
+        height: 2px;
+        content: '';
+    }
+    .navbar-toggler-icon:before {
+        top: -8px;
+    }
+    .navbar-toggler-icon:after {
+        top: 8px;
+    }
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+        background: transparent;
+    }
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    @media (max-width: 799px) {
+        .navbar-toggler-icon {
+            display: block;
+        }
+        .navbar-collapse { 
+            position: absolute;
+            top: 90px;
+            background-color: white;
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+        }
+        .navbar-collapse.expanded {
+            height: auto;
+        }
+        ul.navbar-nav {
+            flex-direction: column;
+            margin-left: 20px;
+        }
     }
 </style>
