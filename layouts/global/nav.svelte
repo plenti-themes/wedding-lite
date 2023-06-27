@@ -4,7 +4,7 @@
 <div id="sticky-wrapper" class="sticky-wrapper">
     <nav class="navbar">
         <div class="container">
-            <a href="#section_0" class="navbar-brand">
+            <a href="#section_0" class="navbar-brand" on:click={() => expanded = false}>
                 <span>Bratt</span>
                 <i class="bi-heart brand-icon" />
                 <span>Jolie</span>
@@ -108,9 +108,8 @@
     a {
         padding-right: 0;
         padding-left: 0;
-        margin-right: 20px;
-        margin-left: 20p;
         display: inline-block;
+        margin-right: 20px;
         color: var(--p-color);
         font-size: var(--menu-font-size);
         font-weight: var(--font-weight-normal);
@@ -166,13 +165,14 @@
         transform: rotate(-45deg);
         top: 0;
     }
-    @media (max-width: 799px) {
+    @media (max-width: 849px) {
         .navbar-toggler-icon {
             display: block;
         }
         .navbar-collapse { 
             position: absolute;
             top: 90px;
+            left: 0;
             background-color: white;
             width: 100%;
             height: 0;
@@ -184,6 +184,13 @@
         ul.navbar-nav {
             flex-direction: column;
             margin-left: 20px;
+            margin-right: 20px;
+            width: 100%;
+        }
+        ul.navbar-nav a {
+            display: block;
+            border-top: 1px solid gainsboro;
+            margin-right: 0;
         }
     }
 </style>
