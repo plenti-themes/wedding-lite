@@ -31,12 +31,9 @@
                     <div class="about-info-wrap">
                         <div class="about-info-title">
                             <h4>{item.name}</h4>
-
                             <span class="about-tag ms-2">{item.title}</span>
                         </div>
-
                         <p>{item.desc}</p>
-
                         <div class="social-icon-wrap mt-auto">
                             <ul class="social-icon ms-auto">
                                 {#each item.social as social}
@@ -58,6 +55,7 @@
     .image-wrapper, .info-wrapper {
         flex: 0 0 auto;
         width: 25%;
+        margin-bottom: 20px;
     }
     .image-hover-thumb {
         border-radius: var(--border-radius-medium);
@@ -101,5 +99,15 @@
     }
     a.social-icon-link:hover {
         color: var(--white-color);
+    }
+    @media (max-width: 899px) {
+        .image-wrapper, .info-wrapper {
+            width: 50%;
+        }
+    }
+    @media (max-width: 499px) {
+        .image-wrapper, .info-wrapper {
+            width: 100%;
+        }
     }
 </style>

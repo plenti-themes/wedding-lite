@@ -46,8 +46,7 @@
         right: 0;
         left: 0;
         z-index: 9;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 20px;
         flex-wrap: nowrap;
         justify-content: flex-start;
         display: flex;
