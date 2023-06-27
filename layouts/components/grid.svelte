@@ -85,4 +85,9 @@
         max-height: 275px;
         transform: scale(1.05);
     }
+    @media (max-width: 799px) {
+        .items {
+            grid-template-columns: 1fr;
+        }
+    }
 </style>
