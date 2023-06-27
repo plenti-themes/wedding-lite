@@ -52,4 +52,9 @@
         max-width: 100%;
         transform: scale(1.2);
     }
+    @media (max-width: 599px) {
+        .photos {
+            grid-template-columns: 1fr;
+        }
+    }
 </style>
